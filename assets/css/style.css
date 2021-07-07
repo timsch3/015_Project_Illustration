@@ -22,6 +22,12 @@ h1 {
 p { 
     line-height: 2em;
 }
+section:first-of-type div:nth-of-type(n+2), #applications, #examples, #download {
+    padding-top: 160px;
+}
+h1 {
+    margin-bottom: 20px;
+}
 
 /* =============== Navigation */
 nav ul {
@@ -41,9 +47,6 @@ section:first-of-type div > div {
     vertical-align: middle;
     text-align: left;
 }
-section:first-of-type div > div h1 {
-    margin-bottom: 20px;
-}
 section:first-of-type div > div p {
     margin-bottom: 25px;
 }
@@ -54,6 +57,7 @@ section:first-of-type div > div a {
     border-radius: 5px;
     box-shadow: 1px 2px 4px #33333333;
 }
+/* --------------- Setting links */
 section:first-of-type div > div a:first-of-type {
     background-color: black;
     color: white;
@@ -62,16 +66,109 @@ section:first-of-type div > div a:last-of-type {
     background-color: white;
     color: black;
 }
-
-background-color: black;
-color: white;
-section:first-of-type div img:nth-of-type(odd) {
+/* --------------- Setting images */
+.img_right {
     padding-left: 12%;
     vertical-align: middle;
     width: 40%;
 }
-section:first-of-type div img:nth-of-type(even) {
+.img_left {
     padding-right: 12%;
     vertical-align: middle;
+    width: 30%;
+}
+.img_right_smaller {
+    padding-left: 12%;
+    vertical-align: middle;
+    width: 30%;
+}
+
+/* =============== Section 2 (illustrations for applications) */
+#applications > div {
+    padding-top: 40px;
+}
+#applications img {
+    width: 25%;
+    padding-right: 70px;
+}
+#applications img:last-of-type {
+    padding-right: 0;
+}
+
+/* =============== Section 3 (examples of use) */
+#examples p {
+    padding-bottom: 50px;
+}
+#examples img {
     width: 40%;
+    padding-bottom: 60px;
+}
+#examples div > div img:first-of-type {
+    padding-right: 45px;
+}
+
+/* =============== Section 4 (download illustrations) */
+#download div {
+    background-color: #F5FBFE;
+    padding: 40px;
+    border: 1px solid #20202011;
+    border-radius: 3px;
+}
+#download div h2 {
+    font-size: 1.1em;
+}
+#download h1 {
+    padding: 10px 0 20px 0;
+}
+#download div p:first-of-type {
+    font-size: 0.85em;
+    color: grey;
+    font-weight: bold;
+}
+#download div p:last-of-type {
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+#download a {
+    text-decoration: none;
+    font-size: 0.8em;
+    background-color: #24bff2;
+    color: white;
+    border-radius: 3px;
+    padding: 15px 30px 15px;
+}
+
+/* =============== Footer (contact) */
+footer h1 {
+    padding: 70px 0 20px 0;
+}
+footer p:nth-of-type(odd) {
+    font-size: 0.7em;
+    color: grey;
+}
+footer p:nth-of-type(2), ul {
+    font-size: 0.7em;
+}
+footer ul {
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+footer li::before {
+    content: "•";
+    font-size: 1.3em;
+    vertical-align: sub;
+}
+footer li:first-of-type::before {
+    color: #3b5998
+}
+footer li:nth-of-type(2)::before {
+    color: #fcaf45
+}
+footer li:nth-of-type(3)::before {
+    color: #55acee
+}
+footer li:last-of-type::before {
+    color: #c4302b
 }
