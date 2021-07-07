@@ -16,6 +16,12 @@ body {
 div, img, li {
     display: inline-block;
 }
+h1 {
+    font-size: 2.5em;
+}
+p { 
+    line-height: 2em;
+}
 
 /* =============== Navigation */
 nav ul {
@@ -31,3 +37,41 @@ nav li {
 }
 
 /* =============== Top section */
+section:first-of-type div > div {
+    vertical-align: middle;
+    text-align: left;
+}
+section:first-of-type div > div h1 {
+    margin-bottom: 20px;
+}
+section:first-of-type div > div p {
+    margin-bottom: 25px;
+}
+section:first-of-type div > div a {
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 15px 25px 15px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px #33333333;
+}
+section:first-of-type div > div a:first-of-type {
+    background-color: black;
+    color: white;
+}
+section:first-of-type div > div a:last-of-type {
+    background-color: white;
+    color: black;
+}
+
+background-color: black;
+color: white;
+section:first-of-type div img:nth-of-type(odd) {
+    padding-left: 12%;
+    vertical-align: middle;
+    width: 40%;
+}
+section:first-of-type div img:nth-of-type(even) {
+    padding-right: 12%;
+    vertical-align: middle;
+    width: 40%;
+}
