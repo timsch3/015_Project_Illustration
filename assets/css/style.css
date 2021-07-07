@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+/* =============== General styling */
+body {
+    font-family: Merriweather;
+    margin: 0;
+    text-align: center;
+}
+div, img, li {
+    display: inline-block;
+}
+
+/* =============== Navigation */
+nav ul {
+    margin: 0;
+    padding: 10px 15px 0 0;
+    text-align: right;
+    list-style-type: none;
+    font-family: Lato;
+    font-size: 0.8em;
+}
+nav li {
+    padding-left: 18px
+}
+
+/* =============== Top section */
